@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    scroll-behavior: smooth
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 70%;
+}
+
+header {
+    background-color: #333;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,.25) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;  
+    z-index: 100;  
+    width: 100%;  
+}
+
+header .menu {
+    color: #ffff;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .menu .main-menu ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    list-style: none;
+}
+
+header .menu .main-menu ul li {
+    transition: all 0.2s ease-in;
+}
+
+header .menu .main-menu ul li .link {
+    color: #ffff;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+header .menu .main-menu ul li:hover {
+    background-color: #6e6767;
+    border-radius: 10px;
+    padding: 0.4em;
+}
+
+/*Начало первого блока, цитата*/
+section .quote {
+    text-align: center;
+    margin: 6em auto 2em;
+}
+
+section .quote .text-quote {
+    margin-bottom: 1em;
+    font-size: 27px;
+    width: 100%;
+}
+
+section .quote img {
+    margin-bottom: 1em;
+}
+
+section .quote .quote-author {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 0.5em;
+}
+
+section .quote .quote-aboutAuthor {
+    font-size: 14px;
+}
+
+/*Карточки компаний*/
+
+section .company-list {
+    
+}
+
+section .company-list .company-cards {
+    font-size: 17px;
+    padding: 0 2em;
+    margin-bottom: 2em;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .company-list .company-cards .company {
+    width: 47%;
+    background-color: #ffff;
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out;
+    text-align: center;
+}
+
+section .company-list .company-cards .company p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+section .company-list .company:hover {
+    transform: scale(1.05);
+}
+
+/*Текст о индустрии игр*/
+
+aside {
+    background-color: rgb(37, 36, 36);
+}
+
+aside .text-of-sites {
+    color: white;
+    padding: 2em 1em;
+    width: 70%;
+    text-align: center;
+    font-size: 25px;
+    margin: 2em auto;
+}
+
+/*Таблица статей*/
+
+article .table-of-articles {
+    margin-bottom: 2em;
+}
+
+article .table-of-articles table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 17px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+article .table-of-articles table th, td:first-child {
+    background: rgb(37, 36, 36);
+    color: white;
+    padding: 10px 20px; 
+}
+
+article .table-of-articles table th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+article .table-of-articles table th {
+    border: 1px solid black;
+}
+
+article .table-of-articles table td {
+    padding: 1em 2em;
+    font-size: 17px;
+    border: 1px solid black;
+}
+
+article .table-of-articles table .link-of-sites {
+    text-decoration: none;
+    color: white;
+}
+
+article .table-of-articles table .link-of-sites:hover {
+    border-bottom: 2px solid white;
+}
+
+/*Батл статей*/
+
+article .heading {
+    text-align: center;
+}
+
+article .paragraph {
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+article .battle-of-articles .left {
+    width: 75%;
+    text-align: left;
+    border-left: 2px solid black;
+    border-bottom: 2px dashed black;
+}
+
+article .battle-of-articles .right {
+    width: 75%;
+    text-align: end;
+    margin-left: auto;
+    border-right: 2px solid #ffa31a;
+    border-bottom: 2px dashed #ffa31a;
+}
+
+.button {
+    text-decoration: none;  
+    color: #333; 
+    display: inline-block;   
+    background-color: #ffa31a;
+    font-size: 13px;
+    padding: 0.5em 1em;     
+    text-align: center;   
+    border-radius: 4px;   
+    margin: 20px;   
+    position: fixed;   
+    bottom: 5px;   
+    right: 5px;   
+    transition: background-color .3s;   
+    z-index: 1000; 
+    
+} 
+
+.button:hover {   
+    cursor: pointer;
+    color: white;  
+    background-color: #333; 
+}
+
+#button {
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+    .menu {
+        flex-wrap: wrap;
+    }
+    .task-name {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .main-menu {
+        width: 100%;
+    }
+    .quote {
+        width: 100%;
+    }
+    .text-quote {
+        margin-top: 7em;
+        font-size: 20px !important;
+    }
+    .company-cards {
+        flex-wrap: wrap;
+    }
+    .company-cards .company img{
+        width: 80%;
+    }
+    .text-of-sites {
+        font-size: 20px !important;
+    }
+    table th {
+        font-weight: 500;
+    }
+    .button {
+        bottom: 0px;
+        right: 0px;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        padding: 0.3em !important;
+    }
+    .main-menu {
+        margin-bottom: 1em;
+    }
+    .text-quote {
+        margin-top: 6em !important;
+    }
+    .company-cards {
+        flex-wrap: wrap;
+    }
+    .company {
+        width: 100% !important;
+        margin-bottom: 2em;
+    }
+    .text-of-sites {
+        width: 100%;
+        font-size: 17px !important;
+        margin: 0 auto!important;
+        padding: 1em !important;
+    }
+    .valve-company {
+        margin-bottom: 0 !important;
+    }
+    .wrapper_table {
+        width: 80%;
+        margin: 0 auto;
+    }
+    table {
+        margin-top: 2em;
+    }
+    table, th, td {
+        font-size: 14px !important;
+    }
+    .heading {
+        margin-top: 1em;
+    }
+    .left {
+        width: 100% !important;
+    }
+    .right {
+        width: 100% !important;
+    }
+    .paragraph {
+        font-size: 14px !important;
+        padding: 1em !important;
+    }
+    .button {
+        margin: 5px !important;
+        font-size: 10px;
+        display: none;
+    }
+    #button {
+        display: block;
+        font-size: 15px;
+        margin: 10px !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .wrapper {
+        width: 80%;
+    }
+    .task-name {
+        margin-top: 1em;
+    }
+    .menu {
+        width: 300px;
+        font-size: 14px !important;
+        margin: 0 auto !important;
+    }
+    .main-menu ul {
+        gap: 1px !important;
+    }
+    .wrapper-min {
+        width: 100%;
+    }
+    .quote {
+        margin: 0 auto !important;
+    }
+}
