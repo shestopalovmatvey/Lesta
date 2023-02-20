@@ -214,12 +214,14 @@ article .battle-of-articles .right {
     position: fixed;   
     bottom: 5px;   
     right: 5px;   
-    transition: background-color .3s;   
+    transition: all 0.2s;   
     z-index: 1000; 
     
 } 
 
-.button:hover {   
+
+.button:active {   
+    scale: 1.1;
     cursor: pointer;
     color: white;  
     background-color: #333; 
@@ -327,7 +329,7 @@ article .battle-of-articles .right {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 400px) {
     .wrapper {
         width: 80%;
     }
@@ -348,4 +350,22 @@ article .battle-of-articles .right {
     .quote {
         margin: 0 auto !important;
     }
+    .quote-aboutAuthor {
+        margin-bottom: 1em;
+    }
+    .wrapper_table {
+        width: 100%;
+        margin: 0 auto;
+    }
+    table, th, td {
+        font-size: 10px !important;
+        font-weight: 500;
+    }
+    th {
+        padding: 1em !important;
+    }
+    td {
+        padding: 0.5em !important;
+    }
 }
+
