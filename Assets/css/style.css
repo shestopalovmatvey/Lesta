@@ -367,5 +367,10 @@ article .battle-of-articles .right {
     td {
         padding: 0.5em !important;
     }
+    #button {
+        font-size: 11px;
+        margin: 5px !important;
+        bottom: 1em;
+    }
 }
 
